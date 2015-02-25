@@ -2,13 +2,12 @@
 %html
   %head
     %title Pinteresting
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    = link_to root_path do
-      Home
-    = link_to about_path do
-      About
+    = render "layouts/nav"
       
-    = yield
+    .container  
+      = yield
