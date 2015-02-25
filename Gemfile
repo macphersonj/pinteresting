@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.2.0'
 
 gem 'rails', '4.1.6'
 gem 'sass-rails', '~> 4.0.3'
@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'haml'
 gem 'bootstrap-sass'
+gem 'devise', '~> 3.4.1'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'spring', group: :development
