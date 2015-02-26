@@ -11,12 +11,14 @@ gem 'jbuilder', '~> 2.0'
 gem 'haml'
 gem 'bootstrap-sass'
 gem 'devise', '~> 3.4.1'
+gem 'html2haml'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'spring', group: :development
 
 group :development, :test do
   gem 'sqlite3'
+  gem "erb2haml"
 end
 
 group :production do
