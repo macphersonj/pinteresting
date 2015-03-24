@@ -1,18 +1,23 @@
-%p#notice= notice
+= link_to 'Back', pins_path
 
-
-
-
-
-.panel.panel-default
-  .panel-body
-    = image_tag @pin.image.url
-    %p
-      %strong Description:
-      = @pin.description
+.row
+  .col-md-6.col-md-offset-3
+    .panel.panel-default
+      .panel-body
+        .center
+          = image_tag @pin.image.url
       
-  .panel-footer
-    - if @pin.user == current_user
-      = link_to 'Edit', edit_pin_path(@pin)
-      |
-    = link_to 'Back', pins_path
+      .panel-footer
+        
+        %p
+          = @pin.description
+          
+        %strong
+          = @pin.user.email if @pin.user
+         
+        .actions  
+          - if @pin.user == current_user
+            = link_to edit_pin_path(@pin) do
+              %span.glyphicon.glyphicon-edit
+              Edit
+      

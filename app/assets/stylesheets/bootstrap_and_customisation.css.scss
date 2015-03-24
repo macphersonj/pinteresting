@@ -2,9 +2,15 @@ $body-bg: #ecf0f1;
 $navbar-default-bg:#2c3e50;
 $navbar-default-color:#ffffff;
 $navbar-default-link-color:#ffffff;
+$icon-font-path: 'bootstrap/';
+@import 'bootstrap';
 @import "bootstrap";
 
 
 .center {
   text-align:center;
+}
+
+img {
+  max-width:100%;
 }
